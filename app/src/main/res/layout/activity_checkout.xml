@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CheckoutActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00739E">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:gravity="center"
+          android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAYMENT"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:letterSpacing=".05"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto">
+        </TextView>
+      </LinearLayout>
+    </Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_marginLeft="40dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Confirm Order and Pay"
+          android:textColor="#003049"
+          android:layout_marginTop="20dp"
+          android:textSize="18sp"
+          android:letterSpacing=".05"
+          android:textStyle="bold"
+          android:fontFamily="@font/roboto" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:fontFamily="@font/roboto"
+          android:text="Total Price"
+          android:textColor="#003049"
+          android:textSize="16sp"
+          android:textStyle="bold"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="10dp"
+          android:fontFamily="@font/roboto"
+          android:text="CAD"
+          android:textColor="#003049"
+          android:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/totalPayAmount"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="5dp"
+          android:fontFamily="@font/roboto"
+          android:text="0"
+          android:textColor="#003049"
+          android:textSize="16sp"
+          android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <!-- RADIO BUTTONS -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:fontFamily="@font/roboto"
+          android:gravity="start"
+          android:text="PAYMENT DETAILS"
+          android:textColor="#424242"
+          android:letterSpacing=".05"
+          android:textSize="16sp"
+          android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <com.braintreepayments.cardform.view.CardForm
+        android:id="@+id/card_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+    </com.braintreepayments.cardform.view.CardForm>
+
+
+    <!-- 4 INPUTS <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/pay_bg">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginBottom="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pay_form_bg"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="CardHolder Name"
+            android:inputType="textPersonName"
+            android:padding="13dp"
+            android:letterSpacing=".05"
+            android:textColor="#424242"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:layout_marginBottom="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pay_form_bg"
+            android:fontFamily="@font/roboto"
+            android:ems="10"
+            android:hint="Card Number"
+            android:inputType="textPersonName"
+            android:padding="13dp"
+            android:textColor="#424242"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginBottom="10dp">
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/pay_form_bg"
+          android:fontFamily="@font/roboto"
+          android:ems="5"
+          android:hint="Expires"
+          android:inputType="textPersonName"
+          android:padding="13dp"
+          android:textColor="#424242"
+          android:textSize="15sp"
+          android:textStyle="bold"/>
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pay_form_bg"
+            android:fontFamily="@font/roboto"
+            android:ems="5"
+            android:hint="CVV"
+            android:inputType="textPersonName"
+            android:padding="13dp"
+            android:textColor="#424242"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+      </LinearLayout>
+
+
+
+
+    </LinearLayout>-->
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_bg"
+        android:elevation="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="PAY NOW"
+        android:textSize="13sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:fontFamily="@font/roboto"
+          android:gravity="center"
+          android:text="OR"
+          android:textColor="#424242"
+          android:letterSpacing=".05"
+          android:textSize="20sp"
+          android:textStyle="bold"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/idBtnUseQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_bg"
+        android:elevation="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Use QR Code"
+        android:textSize="13sp"/>
+  </LinearLayout>
+</ScrollView>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">FoodOrderApp</string>
+    <string name="description">Freshly prepared noodles by traditional method</string>
+    <string name="decrement">-</string>
+    <string name="increment">+</string>
+    <string name="vary">Price subject to change based on offers available at pick-up time.</string>
+    <string name="list">Recommended sanitised Trippys for you</string>
+    <string name="heading">TRIPPY</string>
+    <string name="about">Veggy Basket allows you to take your grocery list wherever you go — no pen or paper required. In addition to allowing users to create a fun, interactive shopping list. </string>
+    <string name="google_sign_up">Sign Up with Google</string>
+    <string name="fogoIsland">Fogo Island Inn isn\'t your average hotel. The inn features a contemporary, almost futuristic architectural design.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="suite">A basic suite or executive suite comes with a separate living space connected to one or more bedrooms.A mini-suite or junior suite refers to a single room with a bed and
+                sitting area. Some suites also come with kitchenettes.</string>
+    <string name="deluxe">These rooms might be a bit bigger with slightly upgraded amenities or a nicer view. These rooms are typically equipped for groups who need more space, like a couple or small family. </string>
+    <string name="standard">A standard room is likely the same as a queen or a single room, great for a solo traveler or a couple. Expect a double bed. </string>
+    <string name="accessible">Hotels are required by law to provide a certain number of handicapped-accessible rooms. These rooms will have space for a wheelchair to move easily, and a bathroom outfitted for a disabled person.</string>
+    <string name="connect">These rooms have a connecting door between them, as well as individual doors to get to the outside. Great for families or groups who don’t want to have to walk through the hallway to move between rooms.</string>
+    <string name="joint">A joint room has two rooms that share a common wall but no connecting door. Are meant for families with younger children who may be old enough to stay in their own space, but not too far from their parents.</string>
+    <string name="google_maps_api">AIzaSyCSvaIaO0jYVctLpECITP7YkErrmIRoknQ</string>
+
+    <string name="qr_code">qr_code</string>
+    <string name="enter_your_info">Enter your info</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+    <string name="results_appear_here" />
+    <string name="scan">SCAN</string>
+    <string name="title_activity_navigation">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

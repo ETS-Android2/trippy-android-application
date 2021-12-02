@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00739E">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QR CODE PAYMENT"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:letterSpacing=".05"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto">
+            </TextView>
+        </LinearLayout>
+    </Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/idIVQrcode"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/qr_code" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:padding="20dp"
+        android:background="@drawable/pay_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/nameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pay_form_bg"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="CardHolder Name"
+            android:inputType="textPersonName"
+            android:padding="13dp"
+            android:letterSpacing=".05"
+            android:textColor="#424242"
+            android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/numTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pay_form_bg"
+                android:fontFamily="@font/roboto"
+                android:ems="10"
+                android:hint="Card Number"
+                android:inputType="textPersonName"
+                android:padding="13dp"
+                android:textColor="#424242"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/idTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pay_form_bg"
+                android:fontFamily="@font/roboto"
+                android:ems="5"
+                android:hint="Expires"
+                android:inputType="textPersonName"
+                android:padding="13dp"
+                android:textColor="#424242"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/cvvTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pay_form_bg"
+                android:fontFamily="@font/roboto"
+                android:ems="5"
+                android:hint="CVV"
+                android:inputType="textPersonName"
+                android:padding="13dp"
+                android:textColor="#424242"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/idBtnGenerateQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_bg"
+            android:elevation="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Generate Qr Code"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
